@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site Pessoas de Legais</title>
 </head>
 <body>
-    <h1>Caio Site</h1>
-    <h2>Site para pessoas legais</h2>
-    <h3>Site para pessoas muito legais</h3>
-    <h4>Site para pessoas extremamente legais</h4>
-    <h5>Site para pessoas super legais</h5>
-    <h6>Site para pessoas ultra legais</h6>
+    <header>
+        <nav aria-label="Navegaçao principal">
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <button type="button" aria-label="Entrar em contato">Let's Talk</button>
+        </nav>
+    </header>
 
-    <hr>
+    <main id="home">
+        <section aria-labelledby="intro-title">
+            <p>I am Caio!</p>
+            <h1 id="intro-title">Front-End Developer & Designer</h1>
+            <p>
+                Blending thoughtful UI design with clean, responsive deelopment to create websites that look great and perform flawlessly.
+            </p>
+            <button type="button">Downlod CV</button>
+            <ul aria-label="Redes sociais">
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" aria-label="GitHub">GitHub</a></li>
+            </ul>
+        </section>
 
-    <div>
-        <ol>
-            <u><li>Pessoa Legal 1</li></u>
-            <s><li>Pessoa Legal 2</li></s>
-            <b><li>Pessoa Legal 3</li></b>
-        </ol>
-        <ul>
-            <mark><li>Pessoa Muito Legal 1</li></mark>
-            <li>Pessoa Muito Legal 2</li>
-            <li>Pessoa Muito Legal 3</li>
-        </ul>
-    </div>
-    <div>
-        <blockquote><p>Esta é uma citação bem legal para pessoas legais.</p></blockquote>
-    </div>
-    <hr>
-    <div>
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-            </tr>
-            <tr>
-                <td>Pessoa Legal 1</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td>Pessoa Legal 2</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Pessoa Legal 3</td>
-                <td>35</td>
-            </tr>
-        </table>
-    </div>
+        <section id="services" aria-labelledby="services-title">
+            <h2 id="services-title">Services</h2>
+            <p>Designing clean, scalable responsive websites.</p>
 
+            <article>
+                <h3>UI/UX Website Design</h3>
+                <p>Clean user focused layouts with clear structure and visual hierarchy.</p>
+            </article>
+
+            <article>
+                <h3>Frontend Development</h3>
+                <p>Responsive interfaces using HTML, CSS,, and JavaScript for reliable performance</p>
+            </article>
+
+        </section>
+
+    <footer>
+        <p>Aula do professor: Samuel Morrissey de Lima (Oxetech 704).</p>
+    </footer>
 </body>
 </html>
