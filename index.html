@@ -1,78 +1,81 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pessoas de Legais</title>
+    <title>Formulário de Contato Acessível</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Navegaçao principal">
-            <ul>
-                <li><a href="#home" aria-current="page">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-            <button type="button" aria-label="Entrar em contato">Let's Talk</button>
-        </nav>
-    </header>
+    <main class="container">
+        <h1>Formulário de Contato Empresa</h1>
 
-    <main id="home">
-        <hr>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Dados de contato</legend>
 
-        <section aria-labelledby="intro-title">
-            <p>I am Caio!</p>
-            <h1 id="intro-title">Front-End Developer & Designer</h1>
-            <p>
-                Blending thoughtful UI design with clean, responsive deelopment to create websites that look great and
-                perform flawlessly.
-            </p>
-            <button type="button">Downlod CV</button>
-            <ul aria-label="Redes sociais">
-                <li><a href="https://www.linkedin.com/in/caiorenato/" aria-label="LinkedIn">LinkedIn</a></li>
-                <li><a href="https://github.com/CaioRenatoDot" aria-label="GitHub">GitHub</a></li>
-            </ul>
-        </section>
-        <hr>
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required minlength="3" maxlength="80">
+                </div>
 
-        <section id="services" aria-labelledby="services-title">
-            <h2 id="services-title">Services</h2>
-            <p>Designing clean, scalable responsive websites.</p>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required minlength="8" maxlength="20"
+                        pattern="(?=.*[A-Za-z])(?=.*\d).{8,20}">
 
-            <article>
-                <h3>UI/UX Website Design</h3>
-                <p>Clean user focused layouts with clear structure and visual hierarchy.</p>
-                <div class="tag">Modern layouts</div>
-                <div class="tag">Responsive design</div>
+                    <div class="campo senha">
+                        <input type="checkbox" id="lembrar senha" name="lembrar_senha" required>
+                        <label for="lembrar senha">Lembrar senha</label>
 
+                    </div>
 
-            </article>
+                    <h5>Peguei um regex, vê se funciona, tem que ser de A-Z ou a-z, precisa de número e tem que ser de 8
+                        a 20 caracteres</h5>
+                </div>
 
-            <article>
-                <h3>Frontend Development</h3>
-                <p>Responsive interfaces using HTML, CSS,, and JavaScript for reliable performance</p>
-                <div class="tag">Clean HTML/CSS</div>
-                <div class="tag">Smooth interactions</div>
-            </article>
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
+                <br />
+                <fieldset class="grupo-radio">
+                    <legend>Assunto</legend>
 
-                <article>
-                <h3>Performance and Responsiveness</h3>
-                <p>Fast, mobile... Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="tag">Speed Optimization</div>
-                <div class="tag">Asset efficiency</div>
-            </article>
-            <hr>
+                    <div class="opcao">
+                        <input type="radio" id="duvida" name="assunto" value="duvida" required>
+                        <label for="duvida">Dúvida</label>
+                    </div>
 
-        </section>
+                    <div class="opcao">
+                        <input type="radio" id="suporte" name="assunto" value="suporte">
+                        <label for="suporte">Suporte</label>
+                    </div>
 
+                    <div class="opcao">
+                        <input type="radio" id="feedback" name="assunto" value="feedback">
+                        <label for="feedback">Feedback</label>
+                    </div>
+                </fieldset>
 
-        <footer>
-            <p>Aula do professor: Samuel Morrissey de Lima (Oxetech 704).</p>
-        </footer>
+                <div class="campo checkbox">
+                    <br />
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e aceito os termos de uso.</label><br />
+                    <a href="#">Blablabla termos de uso</a>
+
+                </div>
+                <br />
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 
 </html>
