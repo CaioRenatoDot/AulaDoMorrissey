@@ -62,12 +62,16 @@ form {
     text-align: center;
 }
 
-section:first-of-type p:first-child {
-    width: fit-content;
-    margin: 0 0 15px 0;
+.intro-text {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.intro-text p {
+    margin: 0;
     color: crimson;
     font-weight: bold;
-    text-align: left;
+    font-size: 18px;
 }
 
 article {
