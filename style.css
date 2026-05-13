@@ -68,6 +68,65 @@ article {
 fieldset {
         border: 1px solid #f1b6c1;
         border-radius: 8px;
+        padding: 20px;
+}
+
+legend {
+        color: crimson;
+        font-weight: bold;
+}
+
+.campo {
+        margin-bottom: 15px;
+        text-align: left;
+}
+
+label {
+        display: block;
+        margin-bottom: 5px;
+}
+
+input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #f1b6c1;
+        border-radius: 6px;
+        box-sizing: border-box;
+}
+
+input:focus {
+        outline: none;
+        border-color: crimson;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+        width: auto;
+}
+
+.senha,
+.checkbox,
+.opcao {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+}
+
+.senha label,
+.checkbox label,
+.opcao label {
+        margin-bottom: 0;
+}
+
+form button {
+        padding: 12px 30px;
+        border-radius: 6px;
+        cursor: pointer;
+}
+
+form button:hover {
+        background-color: crimson;
+        color: white;
 }
 
 nav button,
